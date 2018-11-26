@@ -1,0 +1,18 @@
+class vehicles():
+
+    def __init__(self,name,color,brand,enginesize):
+        self.name=name
+        self.color=color
+        self.brand=brand
+        self.enginesize=enginesize
+
+    def showDetails(self):
+        print(self.name,self.color,self.brand,self.enginesize)
+
+for i in range(1,4):
+    name=input("Please enter the name of the car:")
+    color=input("Please enter the color of the car:")
+    brand=input("Please enter the brand of the car:")
+    enginesize=input("Please enter the engine size:")
+    i=vehicles(name,color,brand,enginesize)
+    i.showDetails()
